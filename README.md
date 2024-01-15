@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# # Todo App with Firebase
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Todo App is built using React and Firebase, allowing you to manage your tasks seamlessly with features such as adding, fetching, updating, deleting, and marking todos as complete.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Add Todo:**
 
-### `npm start`
+  - Add a new todo with a todo name and completed boolean value.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Get All Todos:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  - Retrieve the list of all todos from the Firebase database.
 
-### `npm test`
+- **Update Todo:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - Edit the title and details of an existing todo.
 
-### `npm run build`
+- **Delete Todo:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - Remove a todo from the list.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Mark Todo as Complete:**
+  - Toggle the completion status of a todo.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+- React: Frontend framework for building user interfaces.
+- Firebase: Real-time NoSQL cloud database for storing and syncing data.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Node.js installed
+- Firebase project set up with Firestore database
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Installation
 
-## Learn More
+1. Clone the repository:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   git clone https://github.com/Prashantly/Firebase-Todo-App.git
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```
 
-### Code Splitting
+2. Navigate to the project directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   cd todo-app-firebase
 
-### Analyzing the Bundle Size
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Navigate to the project directory:
 
-### Making a Progressive Web App
+   ```bash
+   npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```
 
-### Advanced Configuration
+4. Create a Firebase project and set up Firestore database.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+5. Update the Firebase configuration in `FirebaseInit.js` with your project credentials.
 
-### Deployment
+6. Run the app: `npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+7. Access the app in your browser at `http://localhost:3000`.
 
-### `npm run build` fails to minify
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Add new todos by entering the todo and clicking the "Add" button.
+- View the list of todos on the main page.
+- Click on the "Edit" button to update a todo's name and Click "OK".
+- Click on the "Delete" button to remove a todo.
+- Click on the checkbox to mark a todo as complete or incomplete.
